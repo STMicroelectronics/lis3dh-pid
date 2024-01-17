@@ -1036,8 +1036,8 @@ int32_t lis3dh_act_timeout_get(const stmdev_ctx_t *ctx, uint8_t *val);
 
 typedef enum
 {
-  LIS3DH_PULL_UP_DISCONNECT  = 0,
-  LIS3DH_PULL_UP_CONNECT     = 1,
+  LIS3DH_PULL_UP_CONNECT     = 0,
+  LIS3DH_PULL_UP_DISCONNECT  = 1,
 } lis3dh_sdo_pu_disc_t;
 int32_t lis3dh_pin_sdo_sa0_mode_set(const stmdev_ctx_t *ctx,
                                     lis3dh_sdo_pu_disc_t val);
