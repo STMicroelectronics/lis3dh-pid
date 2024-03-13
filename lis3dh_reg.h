@@ -229,11 +229,11 @@ typedef struct
 {
 #if DRV_BYTE_ORDER == DRV_LITTLE_ENDIAN
   uint8_t not_used_01       : 6;
-  uint8_t adc_pd            : 1;
   uint8_t temp_en           : 1;
+  uint8_t adc_pd            : 1;
 #elif DRV_BYTE_ORDER == DRV_BIG_ENDIAN
-  uint8_t temp_en           : 1;
   uint8_t adc_pd            : 1;
+  uint8_t temp_en           : 1;
   uint8_t not_used_01       : 6;
 #endif /* DRV_BYTE_ORDER */
 } lis3dh_temp_cfg_reg_t;
