@@ -44,7 +44,7 @@ This directory contains the LIS3DH component drivers.
 
 </div>
 
-<input type="checkbox" id="collapse-section2" checked aria-hidden="true">
+<input type="checkbox" id="collapse-section2" aria-hidden="true">
 <label for="collapse-section2" aria-hidden="true">V1.1.0 / 01-June-2023</label>
 <div>
 
@@ -53,6 +53,21 @@ This directory contains the LIS3DH component drivers.
 - Add __weak directive to read/write registers routines
 - Extend stmdev_ctx_t structure with mdelay callback
 - repo name changed adding '-pid' extension
+
+##
+
+</div>
+
+<input type="checkbox" id="collapse-section3" checked aria-hidden="true">
+<label for="collapse-section3" aria-hidden="true">V2.0.0 / 20-Mar-2024</label>
+<div>
+
+## Main changes
+
+- Fixed code style (Artistic Style Version 3.4.13)
+- Fix lis3dh_temp_cfg_reg_t struct
+- Invert SDO_PULL_UP connect/disconnect values in API
+- Add "const" to ctx arg for all APIs
 
 ##
 
